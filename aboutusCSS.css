@@ -1,0 +1,207 @@
+body
+{
+  background-image: url("bg.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h5
+{
+    text-align: center;
+    font-family: 'Roobert';
+    color: #17252A;
+    top: 60%;
+    margin-bottom: 10px;
+}
+/* Change autocomplete styles in WebKit */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #FEFFFF;
+  -webkit-box-shadow: 0 0 0px 1000px #3AAFA9 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+*
+{
+    margin: 0;
+}
+
+/* ------------ Signup Page ----------------- */
+
+
+.signup_form, .login_form
+{
+  width: 700px;
+  height: 600px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+}
+::placeholder
+{
+  color: #FEFFFF;
+  opacity: 0.8;
+  text-align:center;
+}
+input, select, textarea
+{
+    color: #ff0000;
+}
+
+input
+{
+
+    margin-top:4px;
+    width: 100%;
+    text-align:center;
+    font-family: 'Roobert';
+    font-size: small;
+    color: #FEFFFF;
+    float: left;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 2px solid #FEFFFF;
+    background-color: #3AAFA9;
+
+
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    outline: none;
+}
+
+
+h2
+{
+    text-align: center;
+    font-family: 'Roobert';
+    color: #FEFFFF;
+    top: 60%;
+    margin-bottom: 10px;
+}
+
+.signup_button
+{
+  margin-top:30px;
+  position: relative;
+  left: 11%;
+  width: 80%;
+  cursor: pointer;
+  background-color: #17252A;
+  color: white;
+  transition-duration: 0.4s;
+  border-bottom: none;
+  font-weight: bold;
+}
+
+.signup_button:hover, .login_button:hover
+{
+  background-color: #2B7A78;
+  color: white;
+}
+
+.logo
+{
+  content: url("servio.png");
+  position: absolute;
+  transform: scale(1, 1);
+  left: 50%;
+
+}
+
+/* Split the screen in half */
+.split
+{
+    height: 80%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: -5%;
+    overflow-x: hidden;
+    padding-top: 0px;
+    border: 0px solid;
+    padding: 0px;
+    box-shadow: 10px 10px 1px #17252A;
+}
+
+/* Control the left side */
+.left
+{
+  left: 0;
+  background-image: url("tools.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.left2
+{
+  left: 0;
+  background-image: url("tools2.png");
+  background-position: center;
+  background-size: cover;
+}
+
+/* Control the right side */
+.right
+{
+  right: 0;
+  background-color: #3AAFA9;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* -------------------Login Page---------------------------------- */
+
+.signup_link, .login_link
+{
+    text-decoration: underline;
+    text-align: center;
+    font-family: 'Roobert';
+    color: #FEFFFF;
+    top: 60%;
+    margin-bottom: 10px;
+}
+
+.login_button, .signup_button
+{
+    margin-bottom: 30px;
+}
+
+.username_email
+{
+    margin-top: 10px;
+}
+
+.username_email, .login_password
+{
+    margin-bottom: 20px;
+}
+
+.login_button
+{
+    margin-top:10px;
+    position: relative;
+    left: 11%;
+    width: 80%;
+    cursor: pointer;
+    background-color: #17252A;
+    color: white;
+    transition-duration: 0.4s;
+    border-bottom: none;
+    font-weight: bold;
+}
